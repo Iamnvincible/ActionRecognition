@@ -44,7 +44,7 @@ The author put pre-trained model on google drive. We can use the pre-trained mod
 
 Download these models to your machine.
 
-6. Train and Test
+6. Validate
 
 Modify one function in **dataloader/spatial_dataloader.py** at line 22.
 
@@ -70,7 +70,12 @@ sudo cp ffmpeg ffprobe /usr/local/bin
 
 Open **TestVideo** notebook, and run cells carefully.
 
-## 3D ResNet
+8. If you want to train a model
+
+Go to command line and refer to the [repo](https://github.com/jeffreyhuang1/two-stream-action-recognition).
+You can refer the code in the notebooks and do some modification in `python spatial_cnn.py`. You can also read code in `spatial_cnn.py` and comprehend command line parameters.
+
+## 3D ResNet(3D ResNets for Action Recognition (CVPR 2018))
 
 1. Clone this repo
 ```
@@ -99,3 +104,7 @@ Take a look at the comments in that notebook, and run cells carefully.
 This notebook can predict the action for each video.And we use the pre-trained model so that we don't need to spend much time in training.
 
 **Attention**: We need ffmpeg to precess videos, if you don't have ffmpeg installed, follow the 7th step above.
+
+6. If you want to train a model
+
+If you want to train a model from scratch, please refer to this [repo](https://github.com/kenshohara/3D-ResNets-PyTorch.git).
