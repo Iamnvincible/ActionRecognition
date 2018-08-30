@@ -82,11 +82,15 @@ https://github.com/kenshohara/video-classification-3d-cnn-pytorch.git
 3. Prepare video data
 
 If you want to use UCF-101 dataset, please download from [here](http://crcv.ucf.edu/data/UCF101/UCF101.rar).
+
+Run `unrar x UCF101.rar`.
+
 Also we can test on your own video.
 
 4. Download pre-trained model
 
 Please download **resnext-101-kinetics-ucf101_split1.pth** from [here](https://drive.google.com/drive/folders/14KRBqT8ySfPtFSuLsFS2U4I-ihTDs0Y9?usp=sharing).
+
 
 5. Open 3D_ResNet notebook
 
