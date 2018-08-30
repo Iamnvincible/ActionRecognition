@@ -7,7 +7,7 @@
 https://github.com/jeffreyhuang1/two-stream-action-recognition.git
 ```
 
-2. Put the jupyter notebooks into the above repo folder.
+2. Put **EasyStart** and **TestVideo** notebooks into the above repo folder.
 
 Put EasyStart and TestVideo into **two-stream-action-recognition**.
 
@@ -69,3 +69,29 @@ sudo cp ffmpeg ffprobe /usr/local/bin
 ```
 
 Open **TestVideo** notebook, and run cells carefully.
+
+## 3D ResNet
+
+1. Clone this repo
+```
+https://github.com/kenshohara/video-classification-3d-cnn-pytorch.git
+```
+
+2. Put **3D_ResNet** into the above folder
+
+3. Prepare video data
+
+If you want to use UCF-101 dataset, please download from [here](http://crcv.ucf.edu/data/UCF101/UCF101.rar).
+Also we can test on your own video.
+
+4. Download pre-trained model
+
+Please download **resnext-101-kinetics-ucf101_split1.pth** from [here](https://drive.google.com/drive/folders/14KRBqT8ySfPtFSuLsFS2U4I-ihTDs0Y9?usp=sharing).
+
+5. Open 3D_ResNet notebook
+
+Take a look at the comments in that notebook, and run cells carefully.
+
+This notebook can predict the action for each video.And we use the pre-trained model so that we don't need to spend much time in training.
+
+**Attention**: We need ffmpeg to precess videos, if you don't have ffmpeg installed, follow the 7th step above.
